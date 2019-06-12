@@ -42,7 +42,7 @@ class Passenger {
       );
     }
     
-    passengers() {
+    drivers() {
       
     }
 }
