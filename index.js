@@ -43,7 +43,11 @@ class Passenger {
     }
     
     drivers() {
-      
+      return store.drivers.filter(
+        function(driver) {
+          return driver.tripId === this.tripId;
+        }.bind(this)
+      );
     }
 }
 
