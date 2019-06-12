@@ -1,20 +1,24 @@
 let store = { drivers: [], passengers: [] };
  
 let driverId = 0;
- 
 class Driver {
     constructor(name) {
-        this.id = ++userId;
+        this.id = ++driverId;
         this.name = name;
- 
-        // insert in the user to the store
         store.users.push(this);
+    }
+    
+    trips() {
+      
+    }
+    
+    passengers() {
+      
     }
 }
  
-let itemId = 0;
- 
-class Item {
+let passengerId = 0;
+class Passenger {
     constructor(name, price, user) {
         this.id = ++itemId;
         this.name = name;
